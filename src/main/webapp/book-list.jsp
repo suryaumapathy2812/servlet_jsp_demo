@@ -23,7 +23,7 @@
 			<th>Actions</th>
 		</tr>
 
-		<c:forEach var="book" items="${books}">
+		<c:forEach items="${books}" var="book" >
 			<tr>
 				<td>${book.id}</td>
 				<td>${book.title}</td>

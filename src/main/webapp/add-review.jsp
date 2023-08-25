@@ -19,14 +19,18 @@
 
 	<h1>Add Review for Book ID: ${param.bookId}</h1>
 
-	<form action="add-review" method="get">
+	<form action="add-review" method="post">
 
 		<input type="hidden" name="bookId" value="${param.bookId}" />
 
 		<label for="userName">user name:</label> <input type="text"
 			name="userName" value="${sessionScope.loggedInEmail}" required /> <br />
-		<br /> <label for="reviewText">Review Comments:</label> <input
-			type="text" name="reviewText" required /> <br /> <br /> <label
+		<br /> 
+		
+		<label for="reviewText">Review Comments:</label> <input
+			type="text" name="reviewText" required /> <br /> <br /> 
+			
+			<label
 			for="rating">Rating:</label> <select name="rating">
 			<c:forEach var="i" begin="1" end="5">
 				<option value="${i}">${i}Stars</option>

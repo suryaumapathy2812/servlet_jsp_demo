@@ -26,6 +26,9 @@ public class LoginServlet extends HttpServlet {
 			throws ServletException, IOException {
 		RequestDispatcher dispatcher = request.getRequestDispatcher("login.html");
 		dispatcher.forward(request, response);
+		
+//		response.sendRedirect("login.html");
+		
 	}
 
 	/**
